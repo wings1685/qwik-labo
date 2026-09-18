@@ -1,0 +1,85 @@
+/* ---------------------------------------------------------------------------------------------*/
+/* variables */
+$wrapper: 980
+$hover: '&:active, &:hover, &.active'
+$time: .3s
+$cubic: cubic-bezier(1, 0, 0, 1)
+
+$black: #000
+$white: #fff
+$dot: #7f7f80
+$grey: #595757
+$border: #c9c9c9
+
+/* ---------------------------------------------------------------------------------------------*/
+/* mixins */
+=transition($property: all, $duration: $time, $delay: 0s, $timing: ease)
+	transition-property: #{$property}
+	transition-duration: $duration
+	transition-delay: $delay
+	transition-timing-function: $timing
+=ellipsis()
+	overflow: hidden
+	text-overflow: ellipsis
+	white-space: nowrap
+=animation($name, $time, $delay: 0s, $count: 1, $timing: linear)
+	animation-name: $name
+	animation-duration: $time
+	animation-delay: $delay
+	animation-iteration-count: $count
+=vertical()
+	-webkit-writing-mode: vertical-rl
+	-ms-writing-mode: tb-rl
+	writing-mode: vertical-rl
+=horizontal()
+	-webkit-writing-mode: horizontal-tb
+	-ms-writing-mode: horizontal-tb
+	writing-mode: horizontal-tb
+=clamp($line: 2)
+	display: -webkit-box
+	overflow: hidden
+	-webkit-line-clamp: $line
+	-webkit-box-orient: vertical
+=sp_scroll()
+	overflow: scroll
+	-webkit-overflow-scrolling: touch
+	overflow-scrolling: touch
+=placeholder($color)
+	&::-webkit-input-placeholder
+		color: $color
+	&:-ms-input-placeholder
+		color: $color
+	&::-moz-placeholder
+		color: $color
+=fx($horizontal: c, $vertical: c, $wrap: n, $direction: r)
+	display: flex
+	@if $horizontal == c
+		justify-content: center
+	@else if $horizontal == s
+		justify-content: flex-start
+	@else if $horizontal == e
+		justify-content: flex-end
+	@else if $horizontal == b
+		justify-content: space-between
+	@if $vertical == c
+		align-items: center
+	@else if $vertical == s
+		align-items: flex-start
+	@else if $vertical == e
+		align-items: flex-end
+	@if $wrap == w
+		flex-wrap: wrap
+	@if $direction == r
+		flex-direction: row
+	@else if $direction == rr
+		flex-direction: row-reverse
+	@else if $direction == c
+		flex-direction: column
+	@else if $direction == cr
+		flex-direction: column-reverse
+@function pc($size)
+	@return calc(#{$size} / #{$wrapper} * 100%)
+@function tb($size)
+	@return calc(100vw / 768 * #{$size})
+@function sp($size)
+	@return calc(100vw / 375 * #{$size})
