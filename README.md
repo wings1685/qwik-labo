@@ -14,7 +14,7 @@
 この実験場では以下を行いました。
 
 - Qwik 標準機能のみを使用した、同一機能を供給するフォーム機構の考察・構築
-- Qwik の状態管理の伝播速度計測
+- Qwik の Context における伝播速度計測
 - Context の Setter / Getter 化
 
 ## Related Articles
