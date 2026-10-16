@@ -11,8 +11,8 @@ type Props = {
 export default component$((props: Props) => {
 	const atIdContext = provideSignalContext(useContext(atId));
 
-	const handleStart$ = $(() => {
-		atIdContext.set(props.to);
+	const handleStart$ = $(async () => {
+		await atIdContext.set$(props.to);
 	});
 	const handleClick$ = $((isAction?: boolean) => {
 		if (!isAction) return;

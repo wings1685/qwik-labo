@@ -13,16 +13,16 @@ export default component$((props: Props) => {
 
 	const el = useSignal<HTMLSpanElement>();
 
-	useTask$(({ track }) => {
+	useTask$(async ({ track }) => {
 		track(() => atIdContext.signal.value);
 
 		if (!el || !el.value || props.id !== atIdContext.signal.value) return;
 
 		el.value.scrollIntoView({ behavior: 'smooth' });
 		recordFinished('GlobalSignal');
-		atIdContext.set('');
+		await atIdContext.set$('');
 		recordStart('Hydration');
-		startHydrationContext.set(records.Hydration.start);
+		await startHydrationContext.set$(records.Hydration.start);
 	});
 
 	return (
