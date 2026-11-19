@@ -20,6 +20,8 @@ export default component$(() => {
 	  <a href="/performance03">performance03</a>
 	  <br />
 	  <a href="/performance04">performance04</a>
+	  <br />
+	  <a href="/events">events</a>
     </>
   );
 });

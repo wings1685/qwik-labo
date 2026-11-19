@@ -16,6 +16,7 @@
 - Qwik 標準機能のみを使用した、同一機能を供給するフォーム機構の考察・構築
 - Qwik の Context における伝播速度計測
 - Context の Setter / Getter 化
+- onClick$ からの反応速度の差を計測
 
 ## Related Articles
 
@@ -26,6 +27,7 @@
 - [【第 3 回】 同一 Astro 上で Solid / Svelte / Vue / React それぞれの処理速度を計測してみた（おまけで Qwik）](https://wings.hatenablog.com/entry/benchmarkThird)
 - [【番外編】 同一 Astro 上で Solid / Svelte / Vue / React それぞれの処理速度を計測してみた（おまけで Qwik）](https://wings.hatenablog.com/entry/benchmarkFinal)
 - [SolidStart / SvelteKit / Qwik City の Context を Getter / Setter 化したかった](https://wings.hatenablog.com/entry/context)
+- [Qwik のクリックイベントはどういう書き方が速いんだろうか](https://wings.hatenablog.com/entry/qwikEventsTime)
 
 ## Folder Map
 
@@ -40,6 +42,7 @@ src/
 │ │ ├─ form/
 │ ├─ router-head/
 │ ├─ routes/
+│ │ ├─ events/
 │ │ ├─ form/
 │ │ ├─ performance01/
 │ │ ├─ performance02/
@@ -48,6 +51,7 @@ src/
 │ ├─ pages/
 │ ├─ shared/
 ├─ routes/
+│ ├─ events/
 │ ├─ form/
 │ ├─ performance01/
 │ ├─ performance02/
