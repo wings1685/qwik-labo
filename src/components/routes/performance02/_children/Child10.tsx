@@ -1,4 +1,4 @@
-import { component$, useContext, useTask$ } from "@builder.io/qwik";
+import { component$, useContext, useTask$ } from "@qwik.dev/core";
 import { recordFinished } from "../_models/performance";
 import { relayData } from "../_models/relayContext";
 import type { RelayProps } from "../_models/relayContext";

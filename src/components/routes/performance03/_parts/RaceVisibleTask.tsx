@@ -1,5 +1,5 @@
 /* eslint-disable qwik/no-use-visible-task */
-import { component$, useSignal, useVisibleTask$ } from "@builder.io/qwik";
+import { component$, useSignal, useVisibleTask$ } from "@qwik.dev/core";
 import { recordStart, recordFinished } from "../_models/performance";
 import type { RaceProps } from "../_models/types";
 

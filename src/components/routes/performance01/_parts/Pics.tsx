@@ -1,5 +1,5 @@
 /* eslint-disable qwik/no-use-visible-task */
-import { $, component$, useContext, useSignal, useVisibleTask$ } from "@builder.io/qwik";
+import { $, component$, useContext, useSignal, useVisibleTask$ } from "@qwik.dev/core";
 import { provideSignalContext } from "@/_global/contexts";
 import { startHydration } from "../_models/contexts";
 import { picKeys, records, recordStart } from "../_models/performance";

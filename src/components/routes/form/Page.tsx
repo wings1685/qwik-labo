@@ -1,4 +1,4 @@
-import { $, component$ } from "@builder.io/qwik";
+import { $, component$ } from "@qwik.dev/core";
 import { initialFormValues, formSchema } from "./_models/schema";
 import { Form } from "@/components/features";
 import MainForm from "./MainForm";

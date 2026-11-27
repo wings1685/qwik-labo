@@ -1,4 +1,4 @@
-import { $, component$, useContextProvider, useSignal } from "@builder.io/qwik";
+import { $, component$, useContextProvider, useSignal } from "@qwik.dev/core";
 import { recordStart } from "../_models/performance";
 import { raceIdData } from "../_models/raceIdContext";
 import { Effect, Parent, Memo, QuantumCircuit } from "./";

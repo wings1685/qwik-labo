@@ -1,4 +1,4 @@
-import { component$ } from "@builder.io/qwik";
+import { component$ } from "@qwik.dev/core";
 import { Circuit, Parent, QuantumStart } from "./_parts";
 import "./Page.sass";
 

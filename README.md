@@ -6,7 +6,7 @@
 
 ## Tech Stack
 
-- Qwik City 1.20.0
+- Qwik 2.0.0
 - Valibot
 
 ## Experiments
@@ -40,7 +40,6 @@ src/
 ├─ components/
 │ ├─ features/
 │ │ ├─ form/
-│ ├─ router-head/
 │ ├─ routes/
 │ │ ├─ events/
 │ │ ├─ form/

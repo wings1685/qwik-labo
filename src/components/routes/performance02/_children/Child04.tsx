@@ -1,4 +1,4 @@
-import { component$ } from "@builder.io/qwik";
+import { component$ } from "@qwik.dev/core";
 import { Child05 } from "./";
 import type { RelayProps } from "../_models/relayContext";
 

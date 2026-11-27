@@ -1,4 +1,4 @@
-import { component$ } from "@builder.io/qwik";
+import { component$ } from "@qwik.dev/core";
 import { Receipt, ReactiveTypes, Parent } from "./_parts";
 import "./Page.sass";
 

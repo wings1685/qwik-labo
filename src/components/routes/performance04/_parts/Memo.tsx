@@ -1,5 +1,5 @@
 /* eslint-disable qwik/no-use-visible-task */
-import { component$, useComputed$, useContext, useVisibleTask$ } from "@builder.io/qwik";
+import { component$, useComputed$, useContext, useVisibleTask$ } from "@qwik.dev/core";
 import { recordStart, recordFinished, logMemo } from "../_models/performance";
 import { raceIdData } from "../_models/raceIdContext";
 

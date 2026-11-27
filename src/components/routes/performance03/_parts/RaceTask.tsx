@@ -1,4 +1,4 @@
-import { component$, useSignal, useTask$ } from "@builder.io/qwik";
+import { component$, useSignal, useTask$ } from "@qwik.dev/core";
 import { recordStart, recordFinished } from "../_models/performance";
 import type { RaceProps } from "../_models/types";
 

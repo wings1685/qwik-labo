@@ -1,5 +1,5 @@
-import { createContextId } from "@builder.io/qwik";
-import type { QRL, Signal } from "@builder.io/qwik";
+import { createContextId } from "@qwik.dev/core";
+import type { QRL, Signal } from "@qwik.dev/core";
 
 export type RelayData = number;
 export type RelaySetter = QRL<(_: RelayData) => void>;

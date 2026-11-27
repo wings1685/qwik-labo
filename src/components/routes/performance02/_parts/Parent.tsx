@@ -1,4 +1,4 @@
-import { component$, useContextProvider, useSignal } from "@builder.io/qwik";
+import { component$, useContextProvider, useSignal } from "@qwik.dev/core";
 import { relayData } from "../_models/relayContext";
 import { Child00 } from "../_children";
 import type { RelayData } from "../_models/relayContext";

@@ -1,5 +1,5 @@
-import { $ } from "@builder.io/qwik";
-import type { Signal } from "@builder.io/qwik";
+import { $ } from "@qwik.dev/core";
+import type { Signal } from "@qwik.dev/core";
 import type { Store } from "solid-js/store";
 
 export const provideSignalContext = <T>(context: Signal<T>) => ({

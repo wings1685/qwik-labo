@@ -1,5 +1,5 @@
 /* eslint-disable qwik/no-use-visible-task */
-import { $, component$, Slot, useContext, useVisibleTask$ } from "@builder.io/qwik";
+import { $, component$, Slot, useContext, useVisibleTask$ } from "@qwik.dev/core";
 import { provideSignalContext } from "@/_global/contexts";
 import { atId } from "../_models/contexts";
 import { recordStart } from "../_models/performance";

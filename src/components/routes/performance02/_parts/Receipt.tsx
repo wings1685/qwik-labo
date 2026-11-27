@@ -1,5 +1,5 @@
 /* eslint-disable qwik/no-use-visible-task */
-import { $, component$, useComputed$, useSignal, useVisibleTask$ } from "@builder.io/qwik";
+import { $, component$, useComputed$, useSignal, useVisibleTask$ } from "@qwik.dev/core";
 import { recordStart } from "../_models/performance";
 import { OnMount } from "./";
 

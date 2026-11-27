@@ -1,4 +1,4 @@
-import { component$, useContextProvider, useSignal } from "@builder.io/qwik";
+import { component$, useContextProvider, useSignal } from "@qwik.dev/core";
 import { atId, startHydration } from "./_models/contexts";
 import { Anchor, At, Pics } from "./_parts";
 import type { AtId, StartHydration } from "./_models/contexts";

@@ -1,4 +1,4 @@
-import { component$, useTask$ } from "@builder.io/qwik";
+import { component$, useTask$ } from "@qwik.dev/core";
 import { recordFinished } from "../_models/performance";
 import type { Records } from "../_models/performance";
 

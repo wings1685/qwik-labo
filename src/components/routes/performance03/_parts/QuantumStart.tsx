@@ -1,5 +1,5 @@
 /* eslint-disable qwik/no-use-visible-task */
-import { $, component$, useSignal, useVisibleTask$ } from "@builder.io/qwik";
+import { $, component$, useSignal, useVisibleTask$ } from "@qwik.dev/core";
 import { QuantumCircuit } from "./";
 
 export default component$(() => {

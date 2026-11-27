@@ -1,4 +1,4 @@
-import { component$, useStore, useTask$ } from "@builder.io/qwik";
+import { component$, useStore, useTask$ } from "@qwik.dev/core";
 import { recordStart, recordFinished } from "../_models/performance";
 import type { ReactiveTypeProps } from "../_models/types";
 

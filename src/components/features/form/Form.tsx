@@ -1,7 +1,7 @@
-import { $, component$, useComputed$, useSignal, useStore, useTask$ } from "@builder.io/qwik";
-import { isServer } from "@builder.io/qwik";
+import { $, component$, useComputed$, useSignal, useStore, useTask$ } from "@qwik.dev/core";
+import { isServer } from "@qwik.dev/core";
 import * as v from "valibot";
-import type { Component, QRL } from "@builder.io/qwik";
+import type { Component, QRL } from "@qwik.dev/core";
 import type { FormProps, FormErrors, BindElements, BindElementKey } from "./types";
 
 type BindElementStatus = { initialValue: unknown, value: unknown, isDirty: boolean, hasInjectedError: boolean };

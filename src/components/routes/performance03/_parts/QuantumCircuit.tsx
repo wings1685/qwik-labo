@@ -1,4 +1,4 @@
-import { component$, useContextProvider, useSignal, useTask$ } from "@builder.io/qwik";
+import { component$, useContextProvider, useSignal, useTask$ } from "@qwik.dev/core";
 import { Quantum00, Quantum01, Quantum02, Quantum03, Quantum04, Quantum05, Quantum06, Quantum07, Quantum08, Quantum09, Quantum10 } from "../_quantumContexts";
 import { quantumData } from "../_models/quantumContext";
 import type { Quantum } from "../_models/quantumContext";

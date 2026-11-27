@@ -1,4 +1,4 @@
-import { component$, useComputed$ } from "@builder.io/qwik";
+import { component$, useComputed$ } from "@qwik.dev/core";
 import { logProps } from "../_models/performance";
 import { Child09 } from "./";
 import type { RelayProps } from "../_models/relayContext";

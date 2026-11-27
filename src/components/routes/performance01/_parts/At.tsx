@@ -1,4 +1,4 @@
-import { component$, useContext, useSignal, useTask$ } from "@builder.io/qwik";
+import { component$, useContext, useSignal, useTask$ } from "@qwik.dev/core";
 import { provideSignalContext } from "@/_global/contexts";
 import { atId, startHydration } from "../_models/contexts";
 import { recordFinished, records, recordStart } from "../_models/performance";

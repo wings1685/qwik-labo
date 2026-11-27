@@ -1,4 +1,4 @@
-import { $, component$ } from "@builder.io/qwik";
+import { $, component$ } from "@qwik.dev/core";
 import { checkboxItems, formErrorMessage, initialBasicValues, radioItems, selectItems } from "./_models/schema";
 import type { FormProps } from "@/components/features/form/types";
 import type { FormSchema } from "./_models/schema";

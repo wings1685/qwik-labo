@@ -1,4 +1,4 @@
-import { component$, useComputed$, useContext, useTask$ } from "@builder.io/qwik";
+import { component$, useComputed$, useContext, useTask$ } from "@qwik.dev/core";
 import { logStore } from "../_models/performance";
 import { quantumData } from "../_models/quantumContext";
 

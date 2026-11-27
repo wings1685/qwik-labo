@@ -1,5 +1,5 @@
 /* eslint-disable qwik/no-use-visible-task */
-import { $, component$, useSignal, useVisibleTask$ } from "@builder.io/qwik";
+import { $, component$, useSignal, useVisibleTask$ } from "@qwik.dev/core";
 import { recordFinished, recordStart } from "./_models/performance";
 
 export default component$(() => {
