@@ -16,13 +16,14 @@ export default component$(() => {
 		<>
 			<head>
 				<meta charset="utf-8" />
+				<DocumentHeadTags />
+				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				{!isDev && (
 				<link
 					rel="manifest"
 					href={`${import.meta.env.BASE_URL}manifest.json`}
 				/>
 				)}
-				<DocumentHeadTags />
 			</head>
 			<body lang="ja">
 				<RouterOutlet />
