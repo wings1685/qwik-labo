@@ -18,7 +18,7 @@ export default component$(() => {
 		recordStart('Store');
 		quantumDataContext.quantum01.value = num.value + 1;
 		num.value++;
-	});
+	}, { strategy: 'document-ready' });
 
 	return null;
 });

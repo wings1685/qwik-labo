@@ -82,7 +82,7 @@ export default component$(() => {
 
 		num.value = finished.value;
 		raceIdDataContext.value = 'Store';
-	});
+	}, { strategy: 'document-ready' });
 
 	return null;
 });

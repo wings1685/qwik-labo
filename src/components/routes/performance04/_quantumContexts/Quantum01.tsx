@@ -19,7 +19,7 @@ export default component$(() => {
 		if (!relayData.value) return;
 
 		quantumDataContext.quantum02.value = relayData.value;
-	});
+	}, { strategy: 'document-ready' });
 
 	return null;
 });

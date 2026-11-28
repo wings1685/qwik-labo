@@ -28,7 +28,7 @@ export default component$((props: RelayProps) => {
 		recordStart('Context');
 		logContext();
 		relayDataContext.value = 1;
-	});
+	}, { strategy: 'document-ready' });
 
 	return null;
 });

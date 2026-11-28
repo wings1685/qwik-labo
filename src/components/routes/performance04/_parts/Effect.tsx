@@ -25,7 +25,7 @@ export default component$(() =>  {
 
 		recordStart('Effect');
 		state01.value = num.value + 1;
-	});
+	}, { strategy: 'document-ready' });
 	useVisibleTask$(({ track }) => {
 		track(() => state01.value);
 
@@ -33,7 +33,7 @@ export default component$(() =>  {
 
 		logEffect();
 		state02.value = state01.value;
-	});
+	}, { strategy: 'document-ready' });
 	useVisibleTask$(({ track }) => {
 		track(() => state02.value);
 
@@ -41,7 +41,7 @@ export default component$(() =>  {
 
 		logEffect();
 		state03.value = state02.value;
-	});
+	}, { strategy: 'document-ready' });
 	useVisibleTask$(({ track }) => {
 		track(() => state03.value);
 
@@ -49,7 +49,7 @@ export default component$(() =>  {
 
 		logEffect();
 		state04.value = state03.value;
-	});
+	}, { strategy: 'document-ready' });
 	useVisibleTask$(({ track }) => {
 		track(() => state04.value);
 
@@ -57,7 +57,7 @@ export default component$(() =>  {
 
 		logEffect();
 		state05.value = state04.value;
-	});
+	}, { strategy: 'document-ready' });
 	useVisibleTask$(({ track }) => {
 		track(() => state05.value);
 
@@ -65,7 +65,7 @@ export default component$(() =>  {
 
 		logEffect();
 		state06.value = state05.value;
-	});
+	}, { strategy: 'document-ready' });
 	useVisibleTask$(({ track }) => {
 		track(() => state06.value);
 
@@ -73,7 +73,7 @@ export default component$(() =>  {
 
 		logEffect();
 		state07.value = state06.value;
-	});
+	}, { strategy: 'document-ready' });
 	useVisibleTask$(({ track }) => {
 		track(() => state07.value);
 
@@ -81,7 +81,7 @@ export default component$(() =>  {
 
 		logEffect();
 		state08.value = state07.value;
-	});
+	}, { strategy: 'document-ready' });
 	useVisibleTask$(({ track }) => {
 		track(() => state08.value);
 
@@ -89,7 +89,7 @@ export default component$(() =>  {
 
 		logEffect();
 		state09.value = state08.value;
-	});
+	}, { strategy: 'document-ready' });
 	useVisibleTask$(({ track }) => {
 		track(() => state09.value);
 
@@ -97,7 +97,7 @@ export default component$(() =>  {
 
 		logEffect();
 		state10.value = state09.value;
-	});
+	}, { strategy: 'document-ready' });
 	useVisibleTask$(({ track }) => {
 		track(() => state10.value);
 
@@ -107,7 +107,7 @@ export default component$(() =>  {
 		recordFinished('Effect');
 		num.value++;
 		raceIdDataContext.value = 'Props';
-	});
+	}, { strategy: 'document-ready' });
 
 	return null;
 });

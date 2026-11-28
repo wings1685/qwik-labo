@@ -18,7 +18,7 @@ export default component$(() => {
 
 		recordStart('Props');
 		relayStart.value = 1;
-	});
+	}, { strategy: 'document-ready' });
 
 	useVisibleTask$(({ track }) => {
 		track(() => raceIdDataContext.value);
@@ -31,7 +31,7 @@ export default component$(() => {
 		relayStart.value = 0;
 
 		raceIdDataContext.value = 'Memo';
-	});
+	}, { strategy: 'document-ready' });
 
 	return <Child01 relay={ relayStart.value } />;
 });

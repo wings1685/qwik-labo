@@ -20,7 +20,7 @@ export default component$(() => {
 
 		recordFinished('Store');
 		recordFinished('Race');
-	});
+	}, { strategy: 'document-ready' });
 
 	return null;
 });
